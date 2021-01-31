@@ -1,10 +1,12 @@
 # Mu-Vi
 My app using:
+- MVVM architecture
 - Room
 - Retrofit, GSON, OkHttp
 - Rx Android
 - Live Data, Data Binding
 - Koin
+- Navigation Graph
 ##
 You can see all movie in my app: recommend, discovery, trending, top rate, popular movie:
 - Show detail movie: rate, realese date, time, desc, company, actor and suggest movie same content
