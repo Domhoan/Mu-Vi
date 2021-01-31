@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="genre"
+            type="com.example.muvi.data.model.Genre" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageGenre"
+            image="@{genre.image}"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="@dimen/dp_136"
+            android:layout_margin="@dimen/dp_8"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/cornerImageView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageBlur"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="@dimen/dp_136"
+            android:adjustViewBounds="true"
+            android:alpha="0.6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_black"
+            app:layout_constraintBottom_toBottomOf="@+id/imageGenre"
+            app:layout_constraintEnd_toEndOf="@+id/imageGenre"
+            app:layout_constraintStart_toStartOf="@+id/imageGenre"
+            app:layout_constraintTop_toTopOf="@+id/imageGenre" />
+
+        <TextView
+            android:id="@+id/textNameGenre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{genre.name}"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageBlur"
+            app:layout_constraintEnd_toEndOf="@+id/imageBlur"
+            app:layout_constraintStart_toStartOf="@+id/imageBlur"
+            app:layout_constraintTop_toTopOf="@+id/imageBlur" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">muvi</string>
+
+    <string name="err_default">Error…!</string>
+    <string name="err_internet">Please check your internet connection !</string>
+    <string name="err_no_trailer">This movie have not trailer !</string>
+
+    <string name="label_press_back_once_again">label_press_back_once_again</string>
+    <string name="message_about_app">Introducing a great movie app for you, would you like to try it out?</string>
+
+    <string name="text_information">Info</string>
+    <string name="text_my_list">My List</string>
+    <string name="text_search_input">Search for movie, genres, people</string>
+    <string name="text_play_trailer">Play Trailer</string>
+    <string name="text_more_like_this">MORE LIKE THIS</string>
+    <string name="text_detail">Detail</string>
+    <string name="text_coming">Coming</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_share_with_friend">Share with friend</string>
+    <string name="text_feedback">Feedback</string>
+    <string name="text_about_app">About app</string>
+    <string name="text_type_somthing">Type something...</string>
+    <string name="text_feedback_subject">Feedback about app Mu Vi !</string>
+    <string name="text_dialog_about_app">About app</string>
+    <string name="text_about_app_by_ht"><![CDATA[Application developed by H&T /n Version 1.0]]></string>
+    <string name="text_loading">Loading...</string>
+    <string name="text_time">%s minutes</string>
+    <string name="text_ok">OK</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_genres">Genres</string>
+    <string name="title_upcoming">UpComing</string>
+    <string name="title_search">Search</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_all_genres">All genres</string>
+    <string name="title_discovery">Discovery</string>
+    <string name="title_trending">Trending</string>
+    <string name="title_top_rate">Top Rate</string>
+    <string name="title_popular">Popular</string>
+    <string name="title_recommend">Recommend</string>
+    <string name="title_my_list">My List</string>
+    <string name="title_company">Company</string>
+    <string name="title_actor">Actor</string>
+
+    <string name="uri_mail_to">mailto:benmitu21@gmail.com</string>
+    <string name="uri_about_app">https://i.pinimg.com/originals/4a/75/ec/4a75ec3c0a51b5df2d352e1d79c20b68.jpg</string>
+    <string name="url_facebook">https://www.facebook.com</string>
+</resources>

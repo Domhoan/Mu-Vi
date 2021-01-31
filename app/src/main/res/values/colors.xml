@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_heliotrope">#BB86FC</color>
+    <color name="color_electric_violet">#6200EE</color>
+    <color name="color_purple">#3700B3</color>
+    <color name="color_robin_egg_blue">#03DAC5</color>
+    <color name="color_teal">#018786</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_dove_gray">#686868</color>
+    <color name="color_cod_gray">#101010</color>
+    <color name="color_monza">#E50914</color>
+    <color name="color_limed_spruce">#343F4B</color>
+    <color name="color_boulder">#757575</color>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/genresFragment"
+        android:name="com.example.muvi.ui.genres.GenresFragment"
+        android:label="GenresFragment"
+        tools:layout="@layout/fragment_genre">
+        <action
+            android:id="@+id/action_genresFragment_to_movieTypeFragment"
+            app:destination="@id/movieTypeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/movieTypeFragment"
+        android:name="com.example.muvi.ui.genres.MovieTypeFragment"
+        android:label="MovieTypeFragment"
+        tools:layout="@layout/fragment_movie_type">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_movieTypeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trailerFragment"
+        android:name="com.example.muvi.ui.trailer.TrailerFragment"
+        android:label="TrailerFragment"
+        tools:layout="@layout/fragment_trailer_movie">
+        <argument
+            android:name="idMovie"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/upComingFragment"
+        android:name="com.example.muvi.ui.upcoming.UpComingFragment"
+        android:label="UpComingFragment"
+        tools:layout="@layout/fragment_upcoming">
+        <action
+            android:id="@+id/action_upComingFragment_to_trailerFragment"
+            app:destination="@id/trailerFragment" />
+        <action
+            android:id="@+id/action_upComingFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.muvi.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailMovieFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_seeAllFragment"
+            app:destination="@id/seeAllFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.muvi.ui.detail.DetailMovieFragment"
+        android:label="DetailMovieFragment"
+        tools:layout="@layout/fragment_detail_movie">
+        <argument
+            android:name="idMovie"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailFragment_to_trailerFragment"
+            app:destination="@id/trailerFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_movieOfActorFragment"
+            app:destination="@id/movieOfActorFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_movieOfCompanyFragment"
+            app:destination="@id/movieOfCompanyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.muvi.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieOfActorFragment"
+        android:name="com.example.muvi.ui.actor.MovieOfActorFragment"
+        android:label="MovieOfActorFragment"
+        tools:layout="@layout/fragment_movie_of_actor">
+        <argument
+            android:name="nameActor"
+            app:argType="string" />
+        <argument
+            android:name="idActor"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_movieOfActorFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieOfCompanyFragment"
+        android:name="com.example.muvi.ui.actor.MovieOfCompanyFragment"
+        android:label="MovieOfCompanyFragment"
+        tools:layout="@layout/fragment_movie_of_company">
+
+        <argument
+            android:name="nameCompany"
+            app:argType="string" />
+        <argument
+            android:name="idCompany"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_movieOfCompanyFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.muvi.ui.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.muvi.ui.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeAllFragment"
+        android:name="com.example.muvi.ui.seeall.SeeAllFragment"
+        android:label="SeeAllFragment"
+        tools:layout="@layout/fragment_see_all">
+        <argument
+            android:name="typeMovie"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_seeAllFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+
+</navigation>
